@@ -18,6 +18,8 @@ flake8 = "^4.0.1"
 brain-games = "brain_games.scripts.brain_games_:main"
 brain-even = "brain_games.scripts.brain_even_:main"
 brain-calc = "brain_games.scripts.brain_calc_:main"
+brain-gcd = "brain_games.scripts.brain_gcd_:main"
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"

@@ -10,4 +10,7 @@
 [![Actions Status](https://github.com/SofikoP/python-project-lvl1/workflows/linter-check/badge.svg)](https://github.com/SofikoP/python-project-lvl1/actions)
 
 
-https://asciinema.org/a/tn0JTguouWiFrIsFBGOguqtNi
+https://asciinema.org/a/8TkPKiPp6o1ByM1UAHhPi410G
+
+
+https://asciinema.org/a/xoZ1J9F8hf5QWVyUVfbZbvJ5m

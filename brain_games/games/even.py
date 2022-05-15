@@ -9,6 +9,6 @@ def is_even(number):
 
 
 def get_question_answer():
-    question = randint(1, 101)
+    question = randint(1, 100)
     answer = 'yes' if is_even(question) else 'no'
     return question, answer

@@ -1,8 +1,8 @@
 from random import randint
 
 
-game_rule = 'What number is missing in the progression?'
-len_of_progression = 10
+GAME_RULE = 'What number is missing in the progression?'
+LEN_OF_PROGRESSION = 10
 
 
 def get_question_answer():
@@ -10,7 +10,7 @@ def get_question_answer():
     step = randint(1, 10)
     progression = []
     i = 0
-    while i < len_of_progression:
+    while i < LEN_OF_PROGRESSION:
         progression.append(str(start))
         start += step
         i += 1

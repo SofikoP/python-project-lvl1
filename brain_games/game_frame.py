@@ -4,7 +4,7 @@ import prompt
 NUMBER_OF_TRY = 3
 
 
-def play_game(game):
+def play(game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
@@ -13,15 +13,14 @@ def play_game(game):
     while counter != NUMBER_OF_TRY:
         (question, answer) = game.get_question_answer()
         print(f'Question: {question}')
-        user_answ = prompt.string('Your answer: ')
-        wrong_answer = (
-            f"'{user_answ}' is wrong answer ;(. Correct answer was '{answer}'."
-            f"\nLet's try again, {name}!"
-        )
-        if user_answ == answer:
+        user_answer = prompt.string('Your answer: ')
+        if user_answer == answer:
             print('Correct!')
             counter += 1
         else:
-            return wrong_answer
+            print(f"'{user_answer}' is wrong answer ;(. "
+                  f"Correct answer was '{answer}'.")
+            print(f"Let's try again, {name}!")
+            break
     if counter == NUMBER_OF_TRY:
-        return f'Congratulations, {name}!'
+        print(f'Congratulations, {name}!')

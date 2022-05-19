@@ -5,11 +5,10 @@ GAME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
-    counter = 0
-    for i in range(1, number // 2 + 1):
-        if number % i == 0:
-            counter += 1
-    return counter == 1
+    divisor = 2
+    while number % divisor != 0:
+        divisor += 1
+    return divisor == number
 
 
 def get_question_answer():

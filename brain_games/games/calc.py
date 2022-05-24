@@ -1,7 +1,7 @@
 from random import randint, choice
 
 
-GAME_RULE = 'What is the result of the expression?'
+RULE = 'What is the result of the expression?'
 
 
 def get_question_answer():
@@ -10,9 +10,9 @@ def get_question_answer():
     operation = choice('+-*')
     question = f'{number_1} {operation} {number_2}'
     if operation == '+':
-        result = question, str(number_1 + number_2)
+        answer = number_1 + number_2
     elif operation == '-':
-        result = question, str(number_1 - number_2)
+        answer = number_1 - number_2
     elif operation == '*':
-        result = question, str(number_1 * number_2)
-    return result
+        answer = number_1 * number_2
+    return question, str(answer)

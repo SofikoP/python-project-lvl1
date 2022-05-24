@@ -8,7 +8,7 @@ def play(game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print(game.GAME_RULE)
+    print(game.RULE)
     counter = 0
     for _ in range(NUMBER_OF_TRY):
         (question, answer) = game.get_question_answer()

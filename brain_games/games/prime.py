@@ -1,16 +1,17 @@
 from random import randint
+from math import sqrt
 
 
-GAME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
     if number < 2:
         return False
-    divisor = 2
-    while number % divisor != 0:
-        divisor += 1
-    return divisor == number
+    for i in range(2, int(sqrt(number)) + 1):
+        if number % i == 0:
+            return False
+    return True
 
 
 def get_question_answer():

@@ -10,7 +10,7 @@ def play(game):
     print(f'Hello, {name}!')
     print(game.GAME_RULE)
     counter = 0
-    while counter != NUMBER_OF_TRY:
+    for _ in range(NUMBER_OF_TRY):
         (question, answer) = game.get_question_answer()
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
@@ -22,5 +22,5 @@ def play(game):
                   f"Correct answer was '{answer}'.")
             print(f"Let's try again, {name}!")
             break
-    if counter == NUMBER_OF_TRY:
+    else:
         print(f'Congratulations, {name}!')

@@ -2,7 +2,7 @@ from random import randint
 
 
 RULE = 'What number is missing in the progression?'
-LEN_OF_PROGRESSION = 10
+PROGRESSION_LENGTH = 10
 
 
 def get_question_answer():
@@ -10,7 +10,7 @@ def get_question_answer():
     step = randint(1, 10)
     progression = []
     i = 0
-    while i < LEN_OF_PROGRESSION:
+    while i < PROGRESSION_LENGTH:
         progression.append(str(start))
         start += step
         i += 1
